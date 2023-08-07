@@ -1,0 +1,13 @@
+# company.graphql
+
+type Company {
+  id: String!
+  createdAt: String!
+  name: String!
+  parentId: String!
+  totalTravelCost: Float
+}
+
+type Query {
+  companiesWithTravelCost: [Company]
+}
